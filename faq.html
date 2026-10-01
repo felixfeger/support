@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ – City Metro Transit Help Center</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="bar"><a class="logo" href="index.html" aria-label="City Metro Transit Help Center home"><img src="https://alerts.citymetro.xyz/logo.png" alt="City Metro"></a>
+<nav><a class="btn " href="index.html">Home</a><a class="btn on" href="faq.html">FAQ</a><a class="btn " href="directory.html">Directory</a><a class="btn" href="contact.html">Contact</a></nav></div></header>
+<main>
+<section class="hero compact">
+<h1>Frequently asked questions</h1>
+<div class="route" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</section>
+<div class="filter"><input id="q" type="search" placeholder="Filter questions" aria-label="Filter questions"></div>
+<div id="faq">
+<details><summary>How do I pay my fare?</summary><p>Tap a City Metro card on the validator when you board. Fares are deducted from your card balance.</p></details>
+<details><summary>How do I add money to my card?</summary><p>Sign in to your account and choose a card to add value. Updated balances show the next time you tap.</p></details>
+<details><summary>My card was declined. What should I do?</summary><p>Check your balance first. If it is sufficient, hold the card flat against the validator for two seconds, then contact customer care.</p></details>
+<details><summary>Where can I see delays and closures?</summary><p>Live service alerts are posted at alerts.citymetro.xyz.</p></details>
+<details><summary>I lost something on a train. How do I get it back?</summary><p>Contact Lost and Found through the Directory with the line, time and a description of the item.</p></details>
+<details><summary>Are stations and vehicles accessible?</summary><p>Yes. Ask a station attendant or the support assistant for step-free routes and accessibility help.</p></details>
+<details><summary>How do I report a problem or give feedback?</summary><p>Use the support assistant or contact Customer Care from the Directory.</p></details>
+</div>
+<script>
+var q=document.getElementById("q"),items=[].slice.call(document.querySelectorAll("#faq details"));
+function f(){var v=q.value.toLowerCase();items.forEach(function(d){d.classList.toggle("hide",v&&d.textContent.toLowerCase().indexOf(v)<0)})}
+q.addEventListener("input",f);var p=new URLSearchParams(location.search).get("q");if(p){q.value=p;f()}
+</script>
+</main><footer>City Metro Transit · Help Center<br>City Metro Support is for pretend purposes only.</footer><script src="bot.js"></script></body></html>
