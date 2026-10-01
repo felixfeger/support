@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Directory – City Metro Transit Help Center</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="bar"><a class="logo" href="index.html" aria-label="City Metro Transit Help Center home"><img src="https://alerts.citymetro.xyz/logo.png" alt="City Metro"></a>
+<nav><a class="btn " href="index.html">Home</a><a class="btn " href="faq.html">FAQ</a><a class="btn on" href="directory.html">Directory</a><a class="btn" href="contact.html">Contact</a></nav></div></header>
+<main>
+<section class="hero compact">
+<h1>Directory</h1>
+<p class="lead">City Metro websites and services.</p>
+<div class="route" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</section>
+<div class="filter"><input id="q" type="search" placeholder="Filter directory" aria-label="Filter directory"></div>
+<div class="list" id="dir">
+<div class="item"><span class="ic" aria-hidden="true">🚇</span><h3>City Metro</h3><p>The main City Metro website.</p><a class="btn" href="https://citymetro.xyz">citymetro.xyz</a></div>
+<div class="item"><span class="ic" aria-hidden="true">🛡️</span><h3>Police</h3><p>City Metro Police.</p><a class="btn" href="https://police.citymetro.xyz">police.citymetro.xyz</a></div>
+<div class="item"><span class="ic" aria-hidden="true">🚨</span><h3>Alerts</h3><p>Live delays, closures and planned work.</p><a class="btn" href="https://alerts.citymetro.xyz">alerts.citymetro.xyz</a></div>
+<div class="item"><span class="ic" aria-hidden="true">🗺️</span><h3>Trip Planning and Live Arrivals</h3><p>Plan a trip and see live arrival times.</p><a class="btn" href="https://trip-planner.citymetro.xyz">trip-planner.citymetro.xyz</a></div>
+<div class="item"><span class="ic" aria-hidden="true">🎧</span><h3>Support Center</h3><p>Phone and email help. See hours on the contact page.</p><a class="btn" href="contact.html">Contact us</a></div>
+</div>
+<script>
+var q=document.getElementById("q"),c=[].slice.call(document.querySelectorAll("#dir .item"));
+q.addEventListener("input",function(){var v=q.value.toLowerCase();c.forEach(function(d){d.classList.toggle("hide",v&&d.textContent.toLowerCase().indexOf(v)<0)})});
+</script>
+</main><footer>City Metro Transit · Help Center<br>City Metro Support is for pretend purposes only.</footer><script src="bot.js"></script></body></html>
